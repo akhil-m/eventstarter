@@ -1,19 +1,11 @@
 from django.conf.urls import patterns, include, url
-from et.views import index
-
-# Uncomment the next two lines to enable the admin:
-# from django.contrib import admin
-# admin.autodiscover()
+from django.contrib.auth.models import User, Group
+from et.views import event_list, event_detail
+from django.contrib import admin
+admin.autodiscover()
 
 urlpatterns = patterns('',
-	url(r'^$', index)
-    # Examples:
-    # url(r'^$', 'eventstarter.views.home', name='home'),
-    # url(r'^eventstarter/', include('eventstarter.foo.urls')),
-
-    # Uncomment the admin/doc line below to enable admin documentation:
-    # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
-
-    # Uncomment the next line to enable the admin:
-    # url(r'^admin/', include(admin.site.urls)),
+	url(r'^events/$', event_list),
+    url(r'^events/(?P<pk>[0-9]+)/$', event_detail),
+    url(r'^admin/', include(admin.site.urls)),
 )
