@@ -4,11 +4,9 @@
 	</head>
 
 	<body>
-		<form method="" action="POST">
-			<table>
-				{{ EventForm }}
-				<input type="submit" action="/create/" value="Submit Form">
-			</table>
+		<form method="post" action="/create/">
+				{{ EventForm|linebreaks }}
+				<input type="submit" value="Submit Form">
 		</form>
 	</body>
 </html>
