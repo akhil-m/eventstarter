@@ -1,12 +1,29 @@
-<!DOCTYPE html>
-	<head>
-		<title>Create an event</title>
-	</head>
+{% extends "base.html" %}
+{% load bootstrap_toolkit %}
 
-	<body>
-		<form method="post" action="/create/">
-				{{ EventForm|linebreaks }}
+{% block title %}	
+	<title>Create an event</title>
+{% endblock %}
+
+{% block content %}
+	<div class="span6">
+		<h2>Create New Event</h2>
+		<div class="span6 well">
+			<form method="post" action="/events/create/">
+				{% csrf_token %}
+				{% bootstrap_form form layout="vertical" %}
+				<label for="name">Name:</label>
+				<input id="name" type="text" name="name" maxlength="25"><br>
+				<label for="description">Description:</label>
+				<input id="description" type="text" name="description"><br>
+				<label for="goal">Goal:</label>
+				<input id="goal" type="text" name="goal"><br>
+				<label for="goal">Deadline</label>
+				<input id="day" type="text" name="day" placeholder="Day">
+				<input id="month" type="text" name="month" placeholder="Month">
+				<input id="year" type="text" name="year" placeholder="Year">
 				<input type="submit" value="Submit Form">
-		</form>
-	</body>
-</html>
+			</form>
+		</div>
+	</div>
+{% endblock %}

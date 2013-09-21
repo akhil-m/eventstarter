@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% load bootstrap_toolkit %}
+{% load url from future %}
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    {% block title %}{% endblock %}
+    <meta name="description" content="">
+    <meta name="author" content="Dylan Verheul">
+    {% bootstrap_stylesheet_tag %}
+    {% bootstrap_stylesheet_tag "responsive" %}
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    {% bootstrap_javascript_tag %}
+</head>
+
+<body>
+
+<div class="container">
+
+    {% bootstrap_messages %}
+
+    {% block content %}{% endblock %}
+
+    <p><hr></p>
+
+    <footer class="row">
+        <div class="span6">
+            <p>EventStarter</p>
+        </div>
+        <div class="span6" style="text-align:right">
+            MHacks 2013
+        </div>
+    </footer>
+
+</div> 
+
+</body>
+</html>

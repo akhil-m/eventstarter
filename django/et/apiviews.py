@@ -33,7 +33,7 @@ def event_list(request):
 
 
 @csrf_exempt
-def event_detail(request, pk):
+def event_details(request, pk):
     try:
         event = Event.objects.get(pk=pk)
     except Snippet.DoesNotExist:

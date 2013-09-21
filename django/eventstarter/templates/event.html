@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load bootstrap_toolkit %}
+
+{% block title %}
+	<title>{{ event.name }}</title>
+{% endblock %}
+
+{% block content %}	
+	<h3>{{ event.name }}</h3><br>
+	{{ event.description }}<br>
+	{{ event.goal }}<br>
+	{{ event.current }}<br>
+	{{ event.deadline }}
+{% endblock %}

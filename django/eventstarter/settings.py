@@ -122,7 +122,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'et',
     'rest_framework',
-    'south',
+    'bootstrap_toolkit',
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:

@@ -5,10 +5,10 @@ from django.forms import ModelForm
 class Event(models.Model):
 	name = models.CharField(max_length=50)
 	description = models.TextField()
-	goal = models.IntegerField(default=0)
-	current = models.IntegerField()
+	goal = models.IntegerField()
+	current = models.IntegerField(default=0)
 	deadline = models.DateTimeField()
-	created_by = models.ForeignKey(User, unique=True, default=1)
+	created_by = models.ForeignKey(User, default=1)
 
 class EventForm(ModelForm):
 	class Meta:
