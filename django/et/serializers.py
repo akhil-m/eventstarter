@@ -4,14 +4,17 @@ from et.models import Event
 
 
 class EventSerializer(serializers.Serializer):
+
+    def get_event_id(self, e):
+        return e.id
+
     pk = serializers.Field()  # Note: `Field` is an untyped read-only field.
     name = serializers.CharField(max_length=25)
     description = serializers.CharField(widget=widgets.Textarea)
     goal = serializers.IntegerField()
     current = serializers.IntegerField()
     deadline = serializers.DateTimeField()
-    created_by = serializers.IntegerField()
-
+    created_by = serializers.SerializerMethodField('get_event_id')
 
     def restore_object(self, attrs, instance=None):
         if instance:
