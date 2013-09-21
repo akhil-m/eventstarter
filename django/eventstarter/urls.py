@@ -5,7 +5,7 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
-	url(r'^events/$', event_list),
-    url(r'^events/(?P<pk>[0-9]+)/$', event_detail),
+	url(r'^api/events/$', event_list),
+    url(r'^api/events/(?P<pk>[0-9]+)/$', event_detail),
     url(r'^admin/', include(admin.site.urls)),
 )
