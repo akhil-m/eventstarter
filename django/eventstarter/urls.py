@@ -1,10 +1,12 @@
 from django.conf.urls import patterns, include, url
+from et.views import index
 
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
 # admin.autodiscover()
 
 urlpatterns = patterns('',
+	url(r'^$', index)
     # Examples:
     # url(r'^$', 'eventstarter.views.home', name='home'),
     # url(r'^eventstarter/', include('eventstarter.foo.urls')),
