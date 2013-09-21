@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F9066CEF17ED7580002FB472 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9066CEE17ED7580002FB472 /* Foundation.framework */; };
+		F9066CF117ED7580002FB472 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9066CF017ED7580002FB472 /* CoreGraphics.framework */; };
+		F9066CF317ED7580002FB472 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9066CF217ED7580002FB472 /* UIKit.framework */; };
+		F9066CF517ED7580002FB472 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9066CF417ED7580002FB472 /* CoreData.framework */; };
+		F9066CFB17ED7580002FB472 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F9066CF917ED7580002FB472 /* InfoPlist.strings */; };
+		F9066CFD17ED7580002FB472 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F9066CFC17ED7580002FB472 /* main.m */; };
+		F9066D0117ED7580002FB472 /* ESAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F9066D0017ED7580002FB472 /* ESAppDelegate.m */; };
+		F9066D0417ED7580002FB472 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9066D0217ED7580002FB472 /* Main.storyboard */; };
+		F9066D0717ED7580002FB472 /* Eventstarter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F9066D0517ED7580002FB472 /* Eventstarter.xcdatamodeld */; };
+		F9066D0A17ED7580002FB472 /* ESMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9066D0917ED7580002FB472 /* ESMasterViewController.m */; };
+		F9066D0D17ED7580002FB472 /* ESDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9066D0C17ED7580002FB472 /* ESDetailViewController.m */; };
+		F9066D0F17ED7580002FB472 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9066D0E17ED7580002FB472 /* Images.xcassets */; };
+		F9066D1617ED7580002FB472 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9066D1517ED7580002FB472 /* XCTest.framework */; };
+		F9066D1717ED7580002FB472 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9066CEE17ED7580002FB472 /* Foundation.framework */; };
+		F9066D1817ED7580002FB472 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9066CF217ED7580002FB472 /* UIKit.framework */; };
+		F9066D1917ED7580002FB472 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9066CF417ED7580002FB472 /* CoreData.framework */; };
+		F9066D2117ED7580002FB472 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F9066D1F17ED7580002FB472 /* InfoPlist.strings */; };
+		F9066D2317ED7580002FB472 /* EventstarterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F9066D2217ED7580002FB472 /* EventstarterTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F9066D1A17ED7580002FB472 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9066CE317ED7580002FB472 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9066CEA17ED7580002FB472;
+			remoteInfo = Eventstarter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F9066CEB17ED7580002FB472 /* Eventstarter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eventstarter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9066CEE17ED7580002FB472 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F9066CF017ED7580002FB472 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F9066CF217ED7580002FB472 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F9066CF417ED7580002FB472 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F9066CF817ED7580002FB472 /* Eventstarter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Eventstarter-Info.plist"; sourceTree = "<group>"; };
+		F9066CFA17ED7580002FB472 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F9066CFC17ED7580002FB472 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F9066CFE17ED7580002FB472 /* Eventstarter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Eventstarter-Prefix.pch"; sourceTree = "<group>"; };
+		F9066CFF17ED7580002FB472 /* ESAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESAppDelegate.h; sourceTree = "<group>"; };
+		F9066D0017ED7580002FB472 /* ESAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESAppDelegate.m; sourceTree = "<group>"; };
+		F9066D0317ED7580002FB472 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F9066D0617ED7580002FB472 /* Eventstarter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Eventstarter.xcdatamodel; sourceTree = "<group>"; };
+		F9066D0817ED7580002FB472 /* ESMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESMasterViewController.h; sourceTree = "<group>"; };
+		F9066D0917ED7580002FB472 /* ESMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESMasterViewController.m; sourceTree = "<group>"; };
+		F9066D0B17ED7580002FB472 /* ESDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESDetailViewController.h; sourceTree = "<group>"; };
+		F9066D0C17ED7580002FB472 /* ESDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESDetailViewController.m; sourceTree = "<group>"; };
+		F9066D0E17ED7580002FB472 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F9066D1417ED7580002FB472 /* EventstarterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventstarterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9066D1517ED7580002FB472 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F9066D1E17ED7580002FB472 /* EventstarterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EventstarterTests-Info.plist"; sourceTree = "<group>"; };
+		F9066D2017ED7580002FB472 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F9066D2217ED7580002FB472 /* EventstarterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventstarterTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F9066CE817ED7580002FB472 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9066CF117ED7580002FB472 /* CoreGraphics.framework in Frameworks */,
+				F9066CF517ED7580002FB472 /* CoreData.framework in Frameworks */,
+				F9066CF317ED7580002FB472 /* UIKit.framework in Frameworks */,
+				F9066CEF17ED7580002FB472 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9066D1117ED7580002FB472 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9066D1617ED7580002FB472 /* XCTest.framework in Frameworks */,
+				F9066D1917ED7580002FB472 /* CoreData.framework in Frameworks */,
+				F9066D1817ED7580002FB472 /* UIKit.framework in Frameworks */,
+				F9066D1717ED7580002FB472 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F9066CE217ED7580002FB472 = {
+			isa = PBXGroup;
+			children = (
+				F9066CF617ED7580002FB472 /* Eventstarter */,
+				F9066D1C17ED7580002FB472 /* EventstarterTests */,
+				F9066CED17ED7580002FB472 /* Frameworks */,
+				F9066CEC17ED7580002FB472 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F9066CEC17ED7580002FB472 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F9066CEB17ED7580002FB472 /* Eventstarter.app */,
+				F9066D1417ED7580002FB472 /* EventstarterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F9066CED17ED7580002FB472 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9066CEE17ED7580002FB472 /* Foundation.framework */,
+				F9066CF017ED7580002FB472 /* CoreGraphics.framework */,
+				F9066CF217ED7580002FB472 /* UIKit.framework */,
+				F9066CF417ED7580002FB472 /* CoreData.framework */,
+				F9066D1517ED7580002FB472 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F9066CF617ED7580002FB472 /* Eventstarter */ = {
+			isa = PBXGroup;
+			children = (
+				F9066CFF17ED7580002FB472 /* ESAppDelegate.h */,
+				F9066D0017ED7580002FB472 /* ESAppDelegate.m */,
+				F9066D0217ED7580002FB472 /* Main.storyboard */,
+				F9066D0817ED7580002FB472 /* ESMasterViewController.h */,
+				F9066D0917ED7580002FB472 /* ESMasterViewController.m */,
+				F9066D0B17ED7580002FB472 /* ESDetailViewController.h */,
+				F9066D0C17ED7580002FB472 /* ESDetailViewController.m */,
+				F9066D0E17ED7580002FB472 /* Images.xcassets */,
+				F9066D0517ED7580002FB472 /* Eventstarter.xcdatamodeld */,
+				F9066CF717ED7580002FB472 /* Supporting Files */,
+			);
+			path = Eventstarter;
+			sourceTree = "<group>";
+		};
+		F9066CF717ED7580002FB472 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F9066CF817ED7580002FB472 /* Eventstarter-Info.plist */,
+				F9066CF917ED7580002FB472 /* InfoPlist.strings */,
+				F9066CFC17ED7580002FB472 /* main.m */,
+				F9066CFE17ED7580002FB472 /* Eventstarter-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F9066D1C17ED7580002FB472 /* EventstarterTests */ = {
+			isa = PBXGroup;
+			children = (
+				F9066D2217ED7580002FB472 /* EventstarterTests.m */,
+				F9066D1D17ED7580002FB472 /* Supporting Files */,
+			);
+			path = EventstarterTests;
+			sourceTree = "<group>";
+		};
+		F9066D1D17ED7580002FB472 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F9066D1E17ED7580002FB472 /* EventstarterTests-Info.plist */,
+				F9066D1F17ED7580002FB472 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F9066CEA17ED7580002FB472 /* Eventstarter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9066D2617ED7580002FB472 /* Build configuration list for PBXNativeTarget "Eventstarter" */;
+			buildPhases = (
+				F9066CE717ED7580002FB472 /* Sources */,
+				F9066CE817ED7580002FB472 /* Frameworks */,
+				F9066CE917ED7580002FB472 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Eventstarter;
+			productName = Eventstarter;
+			productReference = F9066CEB17ED7580002FB472 /* Eventstarter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F9066D1317ED7580002FB472 /* EventstarterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9066D2917ED7580002FB472 /* Build configuration list for PBXNativeTarget "EventstarterTests" */;
+			buildPhases = (
+				F9066D1017ED7580002FB472 /* Sources */,
+				F9066D1117ED7580002FB472 /* Frameworks */,
+				F9066D1217ED7580002FB472 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9066D1B17ED7580002FB472 /* PBXTargetDependency */,
+			);
+			name = EventstarterTests;
+			productName = EventstarterTests;
+			productReference = F9066D1417ED7580002FB472 /* EventstarterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F9066CE317ED7580002FB472 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ES;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Eventstarter;
+				TargetAttributes = {
+					F9066D1317ED7580002FB472 = {
+						TestTargetID = F9066CEA17ED7580002FB472;
+					};
+				};
+			};
+			buildConfigurationList = F9066CE617ED7580002FB472 /* Build configuration list for PBXProject "Eventstarter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F9066CE217ED7580002FB472;
+			productRefGroup = F9066CEC17ED7580002FB472 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F9066CEA17ED7580002FB472 /* Eventstarter */,
+				F9066D1317ED7580002FB472 /* EventstarterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F9066CE917ED7580002FB472 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9066D0F17ED7580002FB472 /* Images.xcassets in Resources */,
+				F9066CFB17ED7580002FB472 /* InfoPlist.strings in Resources */,
+				F9066D0417ED7580002FB472 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9066D1217ED7580002FB472 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9066D2117ED7580002FB472 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F9066CE717ED7580002FB472 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9066D0717ED7580002FB472 /* Eventstarter.xcdatamodeld in Sources */,
+				F9066D0117ED7580002FB472 /* ESAppDelegate.m in Sources */,
+				F9066D0A17ED7580002FB472 /* ESMasterViewController.m in Sources */,
+				F9066CFD17ED7580002FB472 /* main.m in Sources */,
+				F9066D0D17ED7580002FB472 /* ESDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9066D1017ED7580002FB472 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9066D2317ED7580002FB472 /* EventstarterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F9066D1B17ED7580002FB472 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F9066CEA17ED7580002FB472 /* Eventstarter */;
+			targetProxy = F9066D1A17ED7580002FB472 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F9066CF917ED7580002FB472 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9066CFA17ED7580002FB472 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F9066D0217ED7580002FB472 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9066D0317ED7580002FB472 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F9066D1F17ED7580002FB472 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9066D2017ED7580002FB472 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F9066D2417ED7580002FB472 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F9066D2517ED7580002FB472 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F9066D2717ED7580002FB472 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Eventstarter/Eventstarter-Prefix.pch";
+				INFOPLIST_FILE = "Eventstarter/Eventstarter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F9066D2817ED7580002FB472 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Eventstarter/Eventstarter-Prefix.pch";
+				INFOPLIST_FILE = "Eventstarter/Eventstarter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F9066D2A17ED7580002FB472 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Eventstarter.app/Eventstarter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Eventstarter/Eventstarter-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "EventstarterTests/EventstarterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F9066D2B17ED7580002FB472 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Eventstarter.app/Eventstarter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Eventstarter/Eventstarter-Prefix.pch";
+				INFOPLIST_FILE = "EventstarterTests/EventstarterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F9066CE617ED7580002FB472 /* Build configuration list for PBXProject "Eventstarter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9066D2417ED7580002FB472 /* Debug */,
+				F9066D2517ED7580002FB472 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9066D2617ED7580002FB472 /* Build configuration list for PBXNativeTarget "Eventstarter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9066D2717ED7580002FB472 /* Debug */,
+				F9066D2817ED7580002FB472 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F9066D2917ED7580002FB472 /* Build configuration list for PBXNativeTarget "EventstarterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9066D2A17ED7580002FB472 /* Debug */,
+				F9066D2B17ED7580002FB472 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F9066D0517ED7580002FB472 /* Eventstarter.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F9066D0617ED7580002FB472 /* Eventstarter.xcdatamodel */,
+			);
+			currentVersion = F9066D0617ED7580002FB472 /* Eventstarter.xcdatamodel */;
+			path = Eventstarter.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F9066CE317ED7580002FB472 /* Project object */;
+}
